@@ -1,0 +1,117 @@
+/* ---- Global Section ---- */
+.portfolio-section {
+  padding: 40px 20px;
+  background-color: #0d0d0d;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* ---- Titre Section ---- */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #eaeaea;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2 span {
+  color: #00e28f; /* vert exact */
+}
+
+.section-title h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #00e28f;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.section-title p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #bfbfbf;
+}
+
+/* ---- Grid des projets ---- */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+/* ---- Carte ---- */
+.project-card {
+  background-color: #141414;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #1f1f1f;
+  box-shadow: 0 0 12px rgba(0, 255, 150, 0.08);
+  transition: 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 255, 150, 0.2);
+}
+
+/* ---- Image ---- */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ---- Contenu ---- */
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  margin: 0;
+  font-size: 22px;
+  color: white;
+}
+
+/* ---- Technologies ---- */
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tech-tag {
+  background-color: #0e402f;
+  color: #00ff9d;
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+/* ---- Links ---- */
+.links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.links a {
+  color: #00ff9d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.links a:hover {
+  color: #0affc6;
+}

@@ -1,0 +1,109 @@
+/* SECTION CONTACT — Style sombre cohérent */
+.contact-section {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+/* TITRE PRINCIPAL */
+.contact-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: inline-block;
+  position: relative;
+}
+
+.contact-section h2 span {
+  color: #00e28f; /* même vert que APropos */
+}
+
+/* Barre verte */
+.contact-section h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #00e28f;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+/* Sous-titre */
+.contact-subtitle {
+  color: #c2c2c2;
+  margin-bottom: 45px;
+  font-size: 15px;
+}
+
+/* GRILLE */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+.contact-card {
+  background-color: #1a1a1a;
+  border: 1px solid #272727;
+  border-radius: 14px;
+  padding: 30px 25px;
+  width: 260px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 0px 14px rgba(0, 255, 140, 0.2);
+  border-color: #00e28f;
+}
+
+.link-card {
+  text-decoration: none;
+  color: white;
+}
+
+/* ICONES */
+.contact-icon {
+  font-size: 45px;
+  color: #00e28f;
+  margin-bottom: 10px;
+}
+
+/* TITRE CARD */
+.contact-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #00e28f;
+}
+
+/* PARAGRAPHES */
+.contact-card p {
+  color: #dcdcdc;
+  font-size: 15px;
+}
+
+/* FOOTER */
+.contact-footer {
+  margin-top: 50px;
+  color: #969696;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 32px;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}

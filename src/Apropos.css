@@ -1,0 +1,147 @@
+/* SECTION GLOBAL */
+.apropos-section {
+  background-color: #0d0d0d;
+  padding: 70px 20px;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* CONTENEUR */
+.apropos-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ------ TITRE PRINCIPAL (STYLE COMPÉTENCES) ------ */
+.apropos-title-main {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.apropos-title-main span {
+  color: #00e28f;
+}
+
+/* BARRE VERTE */
+.apropos-title-main::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background-color: #00e28f;
+  border-radius: 4px;
+  margin: 10px auto 0;
+}
+
+/* ------ DESCRIPTION ------ */
+.apropos-description {
+  color: #d3d3d3;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+/* ------ CONTACT ------ */
+.apropos-contact {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-item span {
+  color: #00e28f;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ------ SOUS-TITRE "CE QUE JE FAIS" ------ */
+.apropos-subtitle {
+  font-size: 26px;
+  color: #00e28f;
+  margin-bottom: 20px;
+}
+
+/* ------ BADGES COMPÉTENCES ------ */
+.apropos-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.apropos-skills span {
+  background: #0e402f;
+  color: #00ff9d;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid #00ff9d33;
+  cursor: default;
+  transition: 0.2s ease-in-out;
+}
+
+.apropos-skills span:hover {
+  background-color: #00e28f;
+  color: #0d0d0d;
+  transform: translateY(-4px);
+}
+
+/* ------ RESPONSIVE ------ */
+@media (max-width: 768px) {
+  .apropos-title-main {
+    font-size: 32px;
+  }
+
+  .apropos-description {
+    font-size: 16px;
+  }
+
+  .contact-item span {
+    font-size: 16px;
+  }
+}
+/* ⬛ CONTENEUR GRIS POUR CONTACT */
+.apropos-contact-box {
+  background-color: #1a1a1a;  /* gris foncé */
+  border: 1px solid #2a2a2a;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin: 20px auto 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.apropos-contact-box .contact-item span {
+  color: #dcdcdc;  /* gris clair */
+  font-size: 17px;
+}
+
+/* ⬛ LES SKILLS EN GRIS */
+.gray-skills span {
+  background: #1a1a1a;   /* gris foncé */
+  color: #e5e5e5;        /* gris clair */
+  border: 1px solid #333;
+}
+
+.gray-skills span:hover {
+  background: #2b2b2b;
+  transform: translateY(-3px);
+}
+
+/* Si tu veux une légère lueur verte au hover :
+.gray-skills span:hover {
+  box-shadow: 0 0 12px rgba(0, 255, 150, 0.2);
+}
+*/
+

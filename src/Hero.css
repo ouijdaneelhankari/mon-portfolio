@@ -1,0 +1,59 @@
+/* SECTION HERO */
+.hero-section {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #121212;
+
+  color: white;
+  padding: 0 20px;
+}
+
+/* CONTENU */
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.hero-content h1 span {
+  color: #00e28f; /* le même vert que “Compétences” */
+}
+
+.hero-content p {
+  font-size: 22px;
+  color: #bfbfbf;
+  margin-bottom: 35px;
+}
+
+/* BOUTON */
+.hero-btn {
+  background-color: #00e28f;
+  color: #0d0d0d;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  background-color: #00ffb0;
+  box-shadow: 0px 0px 12px rgba(0, 255, 150, 0.35);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
+}

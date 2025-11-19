@@ -1,0 +1,108 @@
+/* HEADER GLOBAL */
+.header {
+  width: 100%;
+  background-color: #0d0d0d;
+  border-bottom: 1px solid #1a1a1a;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* CONTENEUR */
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.header-logo span {
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+}
+
+.header-logo b {
+  color: #00e28f;
+}
+
+/* MENU */
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-menu a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.25s ease;
+}
+
+.header-menu a:hover {
+  color: #00e28f;
+}
+
+/* BOUTON */
+.header-btn {
+  background-color: #00e28f;
+  color: #0d0d0d;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+  font-weight: 600;
+}
+
+.header-btn:hover {
+  background-color: #00ffb0;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 255, 150, 0.25);
+}
+
+/* HAMBURGER MOBILE */
+.header-burger {
+  width: 30px;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.header-burger div {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+  .header-menu {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #141414;
+    padding: 20px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    gap: 20px;
+    border-left: 1px solid #1f1f1f;
+    border-bottom: 1px solid #1f1f1f;
+    display: none;
+  }
+
+  .header-menu.open {
+    display: flex;
+  }
+
+  .header-burger {
+    display: flex;
+  }
+}
