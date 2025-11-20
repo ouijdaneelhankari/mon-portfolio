@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -13,25 +14,21 @@ const Contact = () => {
 
       <div className="contact-container">
 
+       
         <div className="contact-card">
-        
-          <h3>Téléphone</h3>
-          <p>+33745639822</p>
-        </div>
-
-        <div className="contact-card">
-          <h3>Email</h3>
+          <FaEnvelope className="contact-icon" />
+          
           <p>elhankariouijdane@gmail.com</p>
         </div>
 
         <a
-          href="https://www.linkedin.com/in/ouijdane-el-hankari"
+          href="https://www.linkedin.com/in/ouijdane-el-hankari-90307a274/"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-card link-card"
         >
-         
-          <h3>LinkedIn</h3>
+          <FaLinkedin className="contact-icon" />
+          
           <p>Ouijdane EL HANKARI</p>
         </a>
 
@@ -41,8 +38,8 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="contact-card link-card"
         >
-        
-          <h3>GitHub</h3>
+          <FaGithub className="contact-icon" />
+         
           <p>Mon GitHub</p>
         </a>
 

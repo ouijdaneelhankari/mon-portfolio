@@ -1,21 +1,26 @@
 import React from "react";
 import './Projet.css';
+import image1 from "./images/image1.jpg";
+
 
 const projects = [
-  {
-    name: "E-Commerce Platform",
-    reviewLink: "https://example.com/review-ecommerce",
-    githubLink: "https://github.com/user/ecommerce",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    image: "https://via.placeholder.com/300x180"
-  },
-  {
+   /*{
     name: "Task Management App",
     reviewLink: "https://example.com/review-tasks",
     githubLink: "https://github.com/user/taskapp",
     technologies: ["React", "FastAPI", "PostgreSQL", "WebSocket"],
     image: "https://via.placeholder.com/300x180"
+  },*/
+  
+    
+  {
+    name: "Restaurant Web Vitrine",
+    reviewLink: "https://resplendent-lamington-bb9224.netlify.app/",
+    githubLink: "https://github.com/ouijdaneelhankari/monrestaurant.git",
+    technologies: ["React"],
+    image: image1
   }
+ 
 ];
 
 const PortfolioTable = () => {
@@ -28,7 +33,7 @@ const PortfolioTable = () => {
           Mes <span>Projets</span>
         </h2>
         <p>
-          Technologies et outils que je maîtrise pour créer des applications performantes
+         
         </p>
       </div>
 

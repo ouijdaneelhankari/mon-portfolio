@@ -11,31 +11,19 @@ const APropos = () => {
         </h1>
 
         <p className="apropos-description">
-          Passionné par le développement web depuis plus de 5 ans, je me
-          spécialise dans la création d'applications full-stack robustes et
-          évolutives. Mon expertise couvre le développement frontend avec
-          React, le backend avec Node.js et Python, ainsi que la conception
-          de bases de données et l'architecture cloud.
+        Passionnée par le développement web depuis 5 ans, je me spécialise dans la création d’applications complètes, robustes et évolutives. J’interviens aussi bien sur la partie visible pour l’utilisateur que sur la logique serveur, et je maîtrise la conception de systèmes de données ainsi que la mise en place d’architectures modernes et performantes.
         </p>
 
-        {/* 🔥 Nouveau conteneur gris */}
-        <div className="apropos-contact-box">
-          <div className="contact-item">
-            <span>📍 Paris, France</span>
-          </div>
-          <div className="contact-item">
-            <span>📧 contact@alexandre-martin.dev</span>
-          </div>
-        </div>
+        
 
-        <h3 className="apropos-subtitle">Ce que je fais</h3>
+        <h3 className="apropos-subtitle">Domaines d’expertise</h3>
 
         {/* 🔥 Skills en style gris */}
         <div className="apropos-skills gray-skills">
-          <span>Développement Web</span>
-          <span>API & Backend</span>
+          <span>Developement Fullstack</span>
+          <span>DevOps</span>
           <span>Architecture Logicielle</span>
-          <span>UI/UX Implementation</span>
+          <span>Conception</span>
         </div>
 
       </div>
