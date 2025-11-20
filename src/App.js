@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Hero from './Hero.js';
 import Apropos from './Apropos.js';
