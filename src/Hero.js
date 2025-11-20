@@ -13,7 +13,7 @@ const Hero = () => {
     <div id="hero" className="hero-section">
       <div className="hero-content">
         <h1>Bonjour, Je suis <span>Ouijdane EL HANKARI</span></h1>
-        <p>Développeuse Full-Stack – 5 ans d’expérience</p>
+        <p>Développeuse Full-Stack</p>
         <button className="hero-btn" onClick={scrollToProjects}>
           Voir mes projets
         </button>

@@ -11,7 +11,7 @@ const APropos = () => {
         </h1>
 
         <p className="apropos-description">
-        Passionnée par le développement web depuis 5 ans, je me spécialise dans la création d’applications complètes, robustes et évolutives. J’interviens aussi bien sur la partie visible pour l’utilisateur que sur la logique serveur, et je maîtrise la conception de systèmes de données ainsi que la mise en place d’architectures modernes et performantes.
+        Passionnée par le développement web, je me spécialise dans la création d’applications complètes, robustes et évolutives. J’interviens aussi bien sur la partie visible pour l’utilisateur que sur la logique serveur, et je maîtrise la conception de systèmes de données ainsi que la mise en place d’architectures modernes et performantes.
         </p>
 
         

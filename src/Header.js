@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import "./Header.css";
+import logo from "./images/Logo.JPG"; // ← Assure-toi d'avoir un fichier logo.png dans le même dossier ou ajuste le chemin
 
 const Header = () => {
   const [open, setOpen] = useState(false);
 
-  // Fonction pour scroll smooth et fermer menu mobile
   const handleClick = (e, id) => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-    setOpen(false); // ferme le menu hamburger après clic
+    setOpen(false);
   };
 
   return (
@@ -20,7 +20,8 @@ const Header = () => {
 
         {/* LOGO */}
         <div className="header-logo">
-          <span>Ouijdane EL HANKARI </span>
+          <img src={logo} alt="Logo" className="logo-img" />
+          <span>Ouijdane EL HANKARI</span>
         </div>
 
         {/* MENU */}

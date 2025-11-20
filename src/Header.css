@@ -106,3 +106,17 @@
     display: flex;
   }
 }
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espace entre logo et texte */
+}
+
+.logo-img {
+  width: 50px;   /* taille du logo */
+  height: 50px;  /* même que width pour un cercle parfait */
+  border-radius: 50%; /* transforme en cercle */
+  object-fit: cover;  /* garde le ratio et recadre si nécessaire */
+  border: 2px solid #fff; /* optionnel : bordure autour du cercle */
+}
+
